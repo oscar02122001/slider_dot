@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generetor</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="content">
+        <h1>Generate a <span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <button onclick="generateBtn()">Generate passwords</button>
+        <hr />
+        <form method="get" action="#">
+            <label>
+                Please write password lenght
+                <input type="number" max="16" min="4" required name="pasword" id="input-el">
+                <p id="input-text"></p>
+            </label>
+        </form>
+        <div class="generators">
+            <p class="generator" id="left-el"></p>
+            <p class="generator" id="right-el"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
